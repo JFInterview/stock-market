@@ -26,4 +26,7 @@ export class StockItemComponent implements OnInit {
     this.stocks[index].favorite = !this.stocks[index].favorite;
   }
 
+  trackStockByCode(index, stock) {
+    return stock.code;
+  }
 }
